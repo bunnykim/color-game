@@ -14,14 +14,11 @@ function generateRandomColor() {
 }
 
 //creates array of randomly selected colors
-let color = [
-  generateRandomColor(),
-  generateRandomColor(),
-  generateRandomColor(),
-  generateRandomColor(),
-  generateRandomColor(),
-  generateRandomColor()
-];
+let color = [];
+for (var i=0; i <= 5; i++)
+{
+	color.push(generateRandomColor());
+}
 
 //chooses one color from the color array
 function chooseRandomColor() {
